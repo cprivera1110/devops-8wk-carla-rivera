@@ -1,7 +1,7 @@
 from typing import Annotated
+
 from fastapi import FastAPI, HTTPException, Query
 from pydantic import BaseModel
-
 
 # basic syntax of decorator
 # @decorator_name

@@ -1,5 +1,5 @@
 # import modules from libraries
-from datetime import date
+from datetime import date  # noqa: I001
 from pydantic import BaseModel, ValidationError
 
 class Employee(BaseModel):
@@ -17,7 +17,7 @@ except ValidationError as exc:
         print(exc.errors()[0]["msg"])
 
 ## Unit testing (very important for devops!!)
-import pytest
+import pytest  # noqa: I001
 from fastapi.testclient import TestClient
 # from day07_python_training.demo_project.demo_app import app # import the app we create in demo_app.py
 from demo_app import app # import the app from demo_app.py
